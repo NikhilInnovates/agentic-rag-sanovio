@@ -1,0 +1,13 @@
+pip freeze > requirements.txt
+```
+
+Or create it manually:
+```
+streamlit
+pymupdf
+sentence-transformers
+faiss-cpu
+python-dotenv
+langdetect
+requests
+numpy
