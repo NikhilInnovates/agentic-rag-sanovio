@@ -6,4 +6,3 @@ python-dotenv
 langdetect
 requests
 numpy
-pickle5
