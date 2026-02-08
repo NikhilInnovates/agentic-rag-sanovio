@@ -1,0 +1,87 @@
+{
+  "total_cases": 4,
+  "agent_accuracy": 0.75,
+  "avg_retrieval_recall": 0.0,
+  "avg_answer_coverage": 0.6666666666666666,
+  "cases": [
+    {
+      "question": "What is Omnifix?",
+      "agent_eval": {
+        "correct": true,
+        "predicted": "product_lookup",
+        "expected": "product_lookup"
+      },
+      "retrieval_eval": {
+        "recall": 0.0,
+        "found": [],
+        "missing": [
+          "9151101"
+        ]
+      },
+      "answer_eval": {
+        "keyword_coverage": 0.3333333333333333,
+        "found_keywords": [
+          "syringe"
+        ],
+        "missing_keywords": [
+          "Luer-Lock",
+          "three-piece"
+        ]
+      }
+    },
+    {
+      "question": "Compare Omnifix and Injekt syringes",
+      "agent_eval": {
+        "correct": true,
+        "predicted": "comparison",
+        "expected": "comparison"
+      },
+      "retrieval_eval": {
+        "recall": 0.0,
+        "found": [],
+        "missing": [
+          "9151101",
+          "4606710V0"
+        ]
+      },
+      "answer_eval": {
+        "keyword_coverage": 1.0,
+        "found_keywords": [
+          "Omnifix",
+          "Injekt",
+          "comparison"
+        ],
+        "missing_keywords": []
+      }
+    },
+    {
+      "question": "What products are available for insulin delivery?",
+      "agent_eval": {
+        "correct": true,
+        "predicted": "product_lookup",
+        "expected": "product_lookup"
+      },
+      "retrieval_eval": {},
+      "answer_eval": {
+        "keyword_coverage": 0.6666666666666666,
+        "found_keywords": [
+          "insulin",
+          "pen"
+        ],
+        "missing_keywords": [
+          "needle"
+        ]
+      }
+    },
+    {
+      "question": "What is the capital of France?",
+      "agent_eval": {
+        "correct": false,
+        "predicted": "product_lookup",
+        "expected": "out_of_scope"
+      },
+      "retrieval_eval": {},
+      "answer_eval": {}
+    }
+  ]
+}

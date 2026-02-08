@@ -150,6 +150,59 @@ A: Based on the catalog:
    - Injekt: Two-piece design with Luer connection (Product ID: 4606710V0)
    ...
 ```
+## 🧪 Evaluation
+
+The system includes an automated evaluation suite to measure quality across three dimensions:
+
+### Running Evaluation
+```bash
+python evaluate.py
+```
+
+This will:
+1. Run all test cases from `eval/eval_dataset.json`
+2. Evaluate agent classification, retrieval recall, and answer quality
+3. Save detailed results to `eval/eval_results.json`
+4. Print a summary report
+
+### Evaluation Metrics
+
+**Agent Classification Accuracy**
+- Measures if queries are correctly routed (product_lookup vs comparison vs out_of_scope)
+
+**Retrieval Recall**
+- Checks if expected product IDs appear in retrieved chunks
+- Target: >85% recall for all queries
+
+**Answer Quality (Keyword Coverage)**
+- Verifies that answers contain expected domain terms
+- Ensures answers are in English despite German source material
+
+### Sample Output
+```
+Test Case 1: What is Omnifix?
+📊 Agent Classification: ✓ Correct (product_lookup)
+🔍 Retrieval Recall: 100% (Found: ['9151101'])
+💬 Keyword Coverage: 100% (Found: ['syringe', 'Luer-Lock', 'three-piece'])
+```
+
+### Test Dataset
+
+The evaluation suite includes:
+- 2 product lookup queries
+- 1 comparison query
+- 1 out-of-scope query (to test refusal behavior)
+
+To add more test cases, edit `eval/eval_dataset.json`.
+
+### Limitations & Future Work
+
+Current evaluation is **rule-based** (keyword matching). For production:
+- [ ] Add LLM-as-judge for semantic evaluation
+- [ ] Collect human ratings from domain experts
+- [ ] Implement RAGAS or similar framework
+- [ ] Track hallucination rate
+- [ ] Monitor citation accuracy
 
 ## 🔧 Design Decisions & Trade-offs
 
