@@ -1,0 +1,26 @@
+{
+  "test_cases": [
+    {
+      "question": "What is Omnifix?",
+      "expected_product_ids": ["9151101"],
+      "expected_keywords": ["syringe", "Luer-Lock", "three-piece"],
+      "query_type": "product_lookup"
+    },
+    {
+      "question": "Compare Omnifix and Injekt syringes",
+      "expected_product_ids": ["9151101", "4606710V0"],
+      "expected_keywords": ["Omnifix", "Injekt", "comparison"],
+      "query_type": "comparison"
+    },
+    {
+      "question": "What products are available for insulin delivery?",
+      "expected_keywords": ["insulin", "pen", "needle"],
+      "query_type": "product_lookup"
+    },
+    {
+      "question": "What is the capital of France?",
+      "expected_answer_contains": "don't know",
+      "query_type": "out_of_scope"
+    }
+  ]
+}
