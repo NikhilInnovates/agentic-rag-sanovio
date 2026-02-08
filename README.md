@@ -263,12 +263,12 @@ MIT License - feel free to use this for learning or commercial purposes.
 ## 👤 Author
 
 **Nikhil**
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/YOUR_PROFILE)
+- GitHub: [@YOUR_USERNAME](https://github.com/NikhilInnovates)
+- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/nikhil-panchal-b909b2172/)
 
 ## 🙏 Acknowledgments
 
-- Built as part of a technical challenge for [Company Name]
+- Built as part of a technical challenge for Sanovio
 - Inspired by modern RAG architectures and agentic AI systems
 
 ---
